@@ -8,6 +8,7 @@ class BrandModel {
   final String video;
   final int quality;
   final int rating;
+  final bool isNew;
 
   BrandModel({
     this.name,
@@ -19,6 +20,7 @@ class BrandModel {
     this.video,
     this.quality,
     this.rating,
+    this.isNew,
   });
 
   BrandModel.fromData(Map<String, dynamic> data)
@@ -30,5 +32,6 @@ class BrandModel {
         images = List.from(data['images']),
         video = data['video'],
         quality = data['quality'],
-        rating = data['rating'];
+        rating = data['rating'],
+        isNew = data['is_new'];
 }

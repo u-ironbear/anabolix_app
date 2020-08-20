@@ -1,5 +1,5 @@
 import 'package:anabolix_app/app/locator.dart';
-import 'package:anabolix_app/ui/views/chat_view/chat_view.dart';
+import 'package:anabolix_app/ui/views/books_view/books_view.dart';
 import 'package:anabolix_app/ui/views/cycles_view/cycles_view.dart';
 import 'package:anabolix_app/ui/views/diary_view/diary_view.dart';
 import 'package:anabolix_app/ui/views/news_view/news_view.dart';
@@ -29,8 +29,8 @@ class BottomBarViewModel extends BaseViewModel {
       'view': DiaryView(),
     },
     {
-      'title': 'Чат',
-      'view': ChatView(),
+      'title': 'Книги',
+      'view': BooksView(),
     },
   ];
   List<Map<String, Object>> get views => _views;

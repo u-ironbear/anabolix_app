@@ -39,10 +39,17 @@ class BottomBarView extends StatelessWidget {
               title: Text('Дневник'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(MdiIcons.chatOutline),
-              title: Text('Чат'),
+              icon: Icon(MdiIcons.bookshelf),
+              title: Text('Книги'),
             ),
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: null,
+          child: Icon(
+            MdiIcons.chatOutline,
+            color: Colors.white,
+          ),
         ),
       ),
       viewModelBuilder: () => BottomBarViewModel(),
